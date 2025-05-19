@@ -13,8 +13,5 @@
 
 node index.mjs ejemplos/correcto2.txt
 
--Cómo ejecutar el analizador
-
-node index.mjs ejemplos/correcto2.txt
 solo tenemos que cambiar el nombre del ejemplo (correcto1.txt,incorrecto1.txt,incorrecto2.txt)para poder ejecutarlos. 
 ![alt text](image.png)
