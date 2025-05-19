@@ -1,0 +1,2 @@
+variable x = "hola";
+imprimir(x);
