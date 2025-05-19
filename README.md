@@ -9,12 +9,7 @@
 -Instalación
 
 1. Cloná o copiá este proyecto
-2. Instalá las dependencias:
-
-```bash
-npm install
-
--Generá los archivos del parser
+2. Copilar programa. ejemplos.
 
 node index.mjs ejemplos/correcto2.txt
 
@@ -22,3 +17,4 @@ node index.mjs ejemplos/correcto2.txt
 
 node index.mjs ejemplos/correcto2.txt
 solo tenemos que cambiar el nombre del ejemplo (correcto1.txt,incorrecto1.txt,incorrecto2.txt)para poder ejecutarlos. 
+![alt text](image.png)
