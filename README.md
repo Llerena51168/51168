@@ -6,4 +6,4 @@
 
 3-Instalar dependencias: npm install
 
-4-Ejecutar el analizador: node index.mjs
+4-Ejecutar el analizador: npm start
