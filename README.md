@@ -7,3 +7,7 @@
 3-Instalar dependencias: npm install
 
 4-Ejecutar el analizador: npm start
+
+Como se muestra en la siguiente imagen:
+ 
+ ![alt text](image.png)
