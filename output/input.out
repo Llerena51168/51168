@@ -1,0 +1,29 @@
+Tabla de Tokens:
+TOKEN: LETTER -> "p"
+TOKEN: null -> "->"
+TOKEN: LETTER -> "q"
+TOKEN: null -> "("
+TOKEN: LETTER -> "p"
+TOKEN: null -> "^"
+TOKEN: LETTER -> "q"
+TOKEN: null -> ")"
+TOKEN: null -> "v"
+TOKEN: LETTER -> "r"
+TOKEN: null -> "("
+TOKEN: LETTER -> "p"
+TOKEN: null -> "v"
+TOKEN: LETTER -> "q"
+TOKEN: null -> ")"
+TOKEN: LETTER -> "a"
+TOKEN: DIGIT -> "1"
+TOKEN: null -> "->"
+TOKEN: LETTER -> "b"
+TOKEN: DIGIT -> "2"
+
+Arbol Sintactico:
+(formula (implication (disjunction (conjunction (negation (primary (variable p))))) -> (implication (disjunction (conjunction (negation (primary (variable q))))))))
+
+Traduccion a JavaScript:
+p ? -> ? q
+
+No se encontraron errores de sintaxis.

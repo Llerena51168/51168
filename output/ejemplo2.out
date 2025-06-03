@@ -1,0 +1,20 @@
+Tabla de Tokens:
+TOKEN: null -> "("
+TOKEN: LETTER -> "p"
+TOKEN: null -> "^"
+TOKEN: LETTER -> "q"
+TOKEN: null -> ")"
+TOKEN: null -> "->"
+TOKEN: null -> "("
+TOKEN: LETTER -> "r"
+TOKEN: null -> "v"
+TOKEN: LETTER -> "s"
+TOKEN: null -> ")"
+
+Arbol Sintactico:
+(formula (implication (disjunction (conjunction (negation (primary ( (formula (implication (disjunction (conjunction (negation (primary (variable p))) ^ (negation (primary (variable q))))))) ))))) -> (implication (disjunction (conjunction (negation (primary ( (formula (implication (disjunction (conjunction (negation (primary (variable r)))) v (conjunction (negation (primary (variable s))))))) ))))))))
+
+Traduccion a JavaScript:
+(p && ^ && q) ? -> ? (r || v || s)
+
+No se encontraron errores de sintaxis.

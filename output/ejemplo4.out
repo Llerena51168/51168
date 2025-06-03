@@ -1,0 +1,13 @@
+Tabla de Tokens:
+TOKEN: null -> "("
+TOKEN: LETTER -> "p"
+TOKEN: null -> "v"
+TOKEN: LETTER -> "q"
+
+Arbol Sintactico:
+(formula (implication (disjunction (conjunction (negation (primary ( (formula (implication (disjunction (conjunction (negation (primary (variable p)))) v (conjunction (negation (primary (variable q))))))) <missing ')'>))))))
+
+Traduccion a JavaScript:
+(p || v || q)
+
+Se encontraron 1 errores de sintaxis.
