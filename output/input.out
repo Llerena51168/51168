@@ -1,29 +1,35 @@
 Tabla de Tokens:
-TOKEN: LETTER -> "p"
-TOKEN: null -> "->"
-TOKEN: LETTER -> "q"
-TOKEN: null -> "("
-TOKEN: LETTER -> "p"
-TOKEN: null -> "^"
-TOKEN: LETTER -> "q"
-TOKEN: null -> ")"
-TOKEN: null -> "v"
-TOKEN: LETTER -> "r"
-TOKEN: null -> "("
-TOKEN: LETTER -> "p"
-TOKEN: null -> "v"
-TOKEN: LETTER -> "q"
-TOKEN: null -> ")"
-TOKEN: LETTER -> "a"
-TOKEN: DIGIT -> "1"
-TOKEN: null -> "->"
-TOKEN: LETTER -> "b"
-TOKEN: DIGIT -> "2"
 
-Arbol Sintactico:
+TOKEN: LETTER -> "p" (Línea 1, Columna 0)
+TOKEN: 1 -> "->" (Línea 1, Columna 2)
+TOKEN: LETTER -> "q" (Línea 1, Columna 5)
+TOKEN: 6 -> "(" (Línea 2, Columna 0)
+TOKEN: LETTER -> "p" (Línea 2, Columna 1)
+TOKEN: 3 -> "^" (Línea 2, Columna 3)
+TOKEN: LETTER -> "q" (Línea 2, Columna 5)
+TOKEN: 7 -> ")" (Línea 2, Columna 6)
+TOKEN: 2 -> "v" (Línea 2, Columna 8)
+TOKEN: LETTER -> "r" (Línea 2, Columna 10)
+TOKEN: 6 -> "(" (Línea 3, Columna 1)
+TOKEN: LETTER -> "p" (Línea 3, Columna 2)
+TOKEN: 2 -> "v" (Línea 3, Columna 4)
+TOKEN: LETTER -> "q" (Línea 3, Columna 6)
+TOKEN: 7 -> ")" (Línea 3, Columna 7)
+TOKEN: LETTER -> "a" (Línea 4, Columna 0)
+TOKEN: DIGIT -> "1" (Línea 4, Columna 1)
+TOKEN: 1 -> "->" (Línea 4, Columna 3)
+TOKEN: LETTER -> "b" (Línea 4, Columna 6)
+TOKEN: DIGIT -> "2" (Línea 4, Columna 7)
+
+
+Árbol Sintáctico:
+
 (formula (implication (disjunction (conjunction (negation (primary (variable p))))) -> (implication (disjunction (conjunction (negation (primary (variable q))))))))
 
-Traduccion a JavaScript:
+
+Traducción a JavaScript:
+
 p ? -> ? q
+
 
 No se encontraron errores de sintaxis.

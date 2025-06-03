@@ -1,14 +1,20 @@
 Tabla de Tokens:
-TOKEN: null -> "("
-TOKEN: LETTER -> "p"
-TOKEN: null -> "->"
-TOKEN: null -> ")"
-TOKEN: LETTER -> "q"
 
-Arbol Sintactico:
+TOKEN: 6 -> "(" (Línea 1, Columna 0)
+TOKEN: LETTER -> "p" (Línea 1, Columna 1)
+TOKEN: 1 -> "->" (Línea 1, Columna 3)
+TOKEN: 7 -> ")" (Línea 1, Columna 6)
+TOKEN: LETTER -> "q" (Línea 1, Columna 8)
+
+
+Árbol Sintáctico:
+
 (formula (implication (disjunction (conjunction (negation (primary ( (formula (implication (disjunction (conjunction (negation (primary (variable p))))) -> (implication (disjunction (conjunction (negation ) (primary (variable q)))))))) <missing ')'>))))))
 
-Traduccion a JavaScript:
+
+Traducción a JavaScript:
+
 (p ? -> ? !q)
+
 
 Se encontraron 2 errores de sintaxis.
